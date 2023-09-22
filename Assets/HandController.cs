@@ -6,6 +6,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class HandController : MonoBehaviour
 {
+  [SerializeField]
+  GameObject bulletPrefab;
 
   ActionBasedController controller;
 
@@ -19,7 +21,7 @@ public class HandController : MonoBehaviour
 
   void OnTriggerPress(InputAction.CallbackContext context)
   {
-    Debug.Log("BANG!");
+    Instantiate(bulletPrefab, transform.position, transform.rotation);
   }
 
   // Update is called once per frame
