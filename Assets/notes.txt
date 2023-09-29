@@ -1,0 +1,9 @@
+- Locomotion
+- The enemy should be able to kill you (or at least harm you)
+   - shoot?
+   - follow/hurt?
+- End goal / purpose, progression
+- More interesting design/environments?
+- Resources
+   Ammo, equipment, other guns, melee weapons
+- Arms and a body for the VR player

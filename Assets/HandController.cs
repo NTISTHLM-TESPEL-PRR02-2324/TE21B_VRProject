@@ -6,8 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class HandController : MonoBehaviour
 {
-  [SerializeField]
-  GameObject bulletPrefab;
+
 
   ActionBasedController controller;
 
@@ -32,9 +31,6 @@ public class HandController : MonoBehaviour
         c.PullTrigger();
       }
     }
-
-    Instantiate(bulletPrefab, transform.position, transform.rotation);
-
   }
 
   // Update is called once per frame

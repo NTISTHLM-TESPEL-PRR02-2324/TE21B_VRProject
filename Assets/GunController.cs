@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class GunController : MonoBehaviour
 {
+  [SerializeField]
+  GameObject bulletPrefab;
+
+  [SerializeField]
+  Transform barrelEnd;
+
   // Start is called before the first frame update
   void Start()
   {
@@ -18,7 +24,7 @@ public class GunController : MonoBehaviour
 
   public void PullTrigger()
   {
-    Debug.Log("BANG");
+    Instantiate(bulletPrefab, barrelEnd.position, barrelEnd.rotation);
   }
 
 }
