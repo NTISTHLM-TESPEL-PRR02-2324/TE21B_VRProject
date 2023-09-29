@@ -11,4 +11,13 @@ public class BulletController : MonoBehaviour
   {
     GetComponent<Rigidbody>().AddForce(transform.forward * force, ForceMode.Impulse);
   }
+
+  private void OnCollisionEnter(Collision other)
+  {
+    if (other.gameObject.tag == "enemy")
+    {
+      Destroy(this.gameObject);
+    }
+  }
+
 }
